@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Login Page</title>
+  </head>
+  <body>
+    <!-- top nav -->
+    <div class="container">
+        <nav onclick="homepage()" class="top-nav">
+            <div class="nav-brand">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/thumbnails/008/040/410/small_2x/school-logo-design-template-free-vector.jpg"
+                    alt="Logo"
+                    class="nav-logo"
+                  />
+                  <span>School Management System</span>
+            </div>
+      </nav>
+      <!-- login form -->
+      <div class="login-container">
+          <h1>Login</h1>
+          <form id="loginForm">
+              <div class="form-group">
+                  <label for="username">Username</label>
+                  <input type="text" id="username" name="username" required>
+              </div>
+              <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" name="password" required>
+              </div>
+              <button type="submit" onclick="submitForm()">Login</button>
+              <div id="errorMessage" class="error-message">
+                  Invalid username or password
+              </div>
+              <p>username: admin, pass: password123</p>
+          </form>
+      </div> 
+    </div>     
+      <!-- Script -->
+        <script src="./script.js"></script>
+  </body>
+</html>
