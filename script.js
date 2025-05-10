@@ -25,7 +25,6 @@ function submitForm() {
 
     if (username === 'admin' && password === 'password123') {
         window.location.href = 'home.html';
-        loginUserName.innerHTML = "dcsdfsdf";
 
     } else {
         document.getElementById('errorMessage').style.display = 'block';
@@ -76,6 +75,8 @@ function ShowSchoolData(){
 }
 ShowSchoolData();
 
+// Notice module
+
 const noticeForm = document.getElementById('noticeForm');
 const noticesList = document.getElementById('noticesList');
 const dashboardnotice = document.getElementById('dashboardNotices');
@@ -89,6 +90,7 @@ const dashboardnotice = document.getElementById('dashboardNotices');
     storedArray.unshift(newNoticeData);
     localStorage.setItem('noticeData', JSON.stringify(storedArray));
     noticeForm.reset();
+    location.reload();
     showNoticeData();
 
   })
